@@ -187,7 +187,7 @@ section.slider {
     display: block;
     margin: 0;
     padding: 0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     margin-top: 55px;
     font-weight: normal;
@@ -205,4 +205,156 @@ section.slider {
     text-transform: uppercase;
     background-color: #5284d4;
     line-height: 45px;
+}
+
+
+section {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.opportunities {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.choose__service {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+
+.choose__service__item {
+    background-color: #fafafa;
+    position: relative;
+}
+
+.choose__service__item:hover {
+    background-color: #5284d4;
+    color: #fff;
+    fill: #fff;
+}
+
+.choose__service__item:hover .item__img-wrap::after {
+    background-color: #fff;
+}
+
+.choose__service__item:hover .item__img  {
+    fill: #fff;
+}
+
+.choose__service__item:hover .item__service-title {
+    color: #fff;
+}
+
+
+
+.choose__service__item:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.opportunities__form {
+    background-color: #5284d4;
+    color: #fff;
+}
+
+.opportunities__form__title {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.opportunities__form__subtitle {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #e3e3e3;
+}
+
+.opportunities__form__input {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+
+.opportunities__form__button {
+    display: block;
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-size: 14px;
+    background-color: #5284d4;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.opportunities__form__button::before {
+    display: block;
+    content: 'All Fields With an Are Required ***';
+    color: #e3e3e3;
+    font-size: 14px;
+    text-transform: none;
+    position: absolute;
+    top: -40px;
+}
+.opportunities__form__button:hover {
+    filter: brightness(110%);
+}
+
+.item__img {
+    fill: #838383;
+}
+
+.choose__service__item .item__img-wrap {
+    display: block;
+    width: 50px;
+    margin: 0 auto;
+    margin-top: 30%;
+    position: relative;
+}
+.choose__service__item .item__img-wrap::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    height: 2px;
+    opacity: 0.5;
+  background-color: #5284d4;
+}
+
+.item__service-title {
+    margin-top: 35px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #454545;
+}
+
+.choose__service__item__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
