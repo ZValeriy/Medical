@@ -207,16 +207,12 @@ section.slider {
     line-height: 45px;
 }
 
-
-section {
-    padding-left: 150px;
-    padding-right: 150px;
-}
-
 .opportunities {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .choose__service {
@@ -358,3 +354,240 @@ section {
     width: 100%;
     height: 100%;
 }
+
+
+
+.projects {
+    background: url(images/Layer\ 38.jpg);
+    padding-bottom: 60px;   
+    padding-top: 80px;
+}
+
+.projects__title {
+    letter-spacing: 0.4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+
+.projects__title::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #5284d4;
+}
+
+.projects__title span {
+    color: #5284d4;
+}
+
+.projects__menu {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.projects__menu__item {
+    height: 25px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    margin-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.projects__menu__item:hover {
+    background-color: #5284d4;
+}
+
+.projects__slides {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.projects__slides__item {
+    width: 20%;
+}
+
+.project__image {
+    width: 100%;
+}
+
+.projects__button {
+    display: block;
+    width: 195px;
+    height: 35px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    background-color: #5284d4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.news {
+    padding-top: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+.news>div {
+    width: 45%;
+}
+
+.news__title {
+    text-align: left;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+.news__title span {
+    color: #5284d4;
+}
+
+.news__article {
+    background-color: #fff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__article__description {
+    margin-left: 30px;
+}
+
+.news__article__title {
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.news__article__title::after {
+    display: block;
+    margin-top: 18px;
+    content: '';
+    width: 5%;
+    height: 2px;
+    background-color: #5284d4;
+}
+
+.news__article__text {
+    margin-top: 20px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #989898;
+
+}
+
+.news__video video {
+    display: block;
+    width: 100%;
+    background: url(images/Layer\ 61.png);
+}
+
+.clients {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fafafa;
+}
+
+footer {
+    background-color: #1d2730;
+    padding-top: 85px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 60px;
+    display: flex;
+    color: #fff;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer>div {
+    max-width: 25%;
+}
+
+footer .title {
+    text-align: left;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .main__info .title{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+footer .title span {
+    color: #5284d4;
+}
+
+.main__info__description {
+    margin-top: 40px;
+}
+
+.main__info__calligraph {
+    margin-top: 35px;
+    font-family: 'Mrs Saint Delafield', cursive;
+    font-size: 40px;
+}
+
+.links__list {
+    margin-top: 40px;
+}
+
+.links__list .link {
+    display: block;
+    outline: none;
+    text-decoration: none;
+    margin-top: 30px;
+    color: #fff;
+}
+.link::before {
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    color: #5284d4;
+    margin-right: 15px;
+    
+}
+
+.links__list .link:hover {
+    color: #5284d4;
+}
+
