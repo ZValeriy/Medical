@@ -26,13 +26,10 @@ body {
 }
 
 .upper-header__menu {
-    display: inline-block;
-    position: absolute;
-    right: 150px;
+    float: right;
+    display: inline;
 }
-header {
-    height: 100px;
-}
+
 .header__logo {
     display: inline-block;
     font-size: 37px;
@@ -89,9 +86,8 @@ nav {
     display: inline-block;
 }
 .header__navigation {
-    position: absolute;
-    right: 150px;
-    display: inline-block;
+    display: inline;
+    float: right;
 }
 
 .nav__href {
@@ -150,8 +146,8 @@ section.slider {
 .slider__text {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    width: 570px;
+    transform: translate(10%, -50%);
+    width: 45%;
 }
 
 .slider__text h2 {
@@ -440,7 +436,7 @@ section.slider {
     padding-top: 80px;
     padding-bottom: 60px;
     display: flex;
-    flex-direction: row;
+    
     justify-content: space-between;
     background-color: #fafafa;
 }
@@ -510,7 +506,6 @@ section.slider {
     padding-top: 45px;
     padding-bottom: 45px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     background-color: #fafafa;
 }
@@ -596,6 +591,65 @@ footer .title span {
     margin-right: 15px;
 }
 
+
+@media screen and (min-width: 800px) {
+    .clients {
+        flex-direction: row;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px) {
+    .clients {
+        flex-direction: column;
+    }
+    .clients .clients__item {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .news {
+        flex-direction: column;
+    }
+
+    .news>div {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 30px;
+       
+    }
+
+    .opportunities {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opportunities__form {
+        margin-top: 40px;
+    }
+    .header__navigation {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .choose__service {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .slider__text h3 {
+        display: none;
+    }
+
+    .upper-header__news {
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1920px) {
     header, footer, .upper-header, .slider, .opportunities, .news, .clients {
         width: 1220px;
@@ -618,15 +672,4 @@ footer .title span {
         margin : 0 auto;
     }
 
-}
-
-@media screen and (min-width: 640px) and (max-width: 1000px) {
-    .opportunities {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .opportunities__form {
-        margin-top: 40px;
-    }
 }
