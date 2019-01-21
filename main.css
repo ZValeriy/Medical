@@ -689,6 +689,9 @@ footer .title span {
         grid-template-columns: 1fr 1fr;
     }
 
+    .header__navigation{
+        display: none;
+    }
     .opportunities, header {
         width: 90%;
         margin: 0 auto;
